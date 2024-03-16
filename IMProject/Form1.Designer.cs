@@ -36,12 +36,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.passwordTxt = new System.Windows.Forms.TextBox();
             this.login_btn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-2, 0);
             this.panel1.Name = "panel1";
@@ -52,11 +55,13 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 318);
+            this.label1.Location = new System.Drawing.Point(40, 337);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(407, 38);
+            this.label1.Size = new System.Drawing.Size(319, 76);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Icy Water Refilling Station";
+            this.label1.Text = "Sales and Logistics\r\nIntegration Platform";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -103,6 +108,7 @@
             this.passwordTxt.Name = "passwordTxt";
             this.passwordTxt.Size = new System.Drawing.Size(326, 35);
             this.passwordTxt.TabIndex = 5;
+            this.passwordTxt.UseSystemPasswordChar = true;
             // 
             // login_btn
             // 
@@ -115,6 +121,16 @@
             this.login_btn.Text = "LOGIN";
             this.login_btn.UseVisualStyleBackColor = false;
             this.login_btn.Click += new System.EventHandler(this.login_btn_Click_1);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::IMProject.Properties.Resources.LOGO;
+            this.pictureBox1.Location = new System.Drawing.Point(63, 39);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(279, 282);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // login_form
             // 
@@ -132,6 +148,7 @@
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,6 +164,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox passwordTxt;
         private System.Windows.Forms.Button login_btn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

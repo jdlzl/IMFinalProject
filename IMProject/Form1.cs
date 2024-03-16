@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using IMProject.User_Control;
 using MySql.Data.MySqlClient;
 
 namespace IMProject
@@ -24,7 +25,9 @@ namespace IMProject
                 // Credentials are correct, show the Dashboard form
                 Dashboard dashboard = new Dashboard();
                 dashboard.Show();
+               
                 this.Hide();
+                
             }
             else
             {
@@ -56,6 +59,9 @@ namespace IMProject
             }
         }
 
-        
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
